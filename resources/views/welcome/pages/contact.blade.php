@@ -76,7 +76,10 @@
               <div class="contact-info-details">
                 <h4 class="contact-info-title">Our Address</h4>
                 <p class="contact-info-text">
-                  House 12, Road 5, Dhanmondi,<br />Dhaka 1205, Bangladesh
+                  {{general()->address_one}}
+                  @if(general()->address_two)
+                  <br />{{general()->address_two}}
+                  @endif
                 </p>
               </div>
             </div>
@@ -89,8 +92,7 @@
               <div class="contact-info-details">
                 <h4 class="contact-info-title">Phone Numbers</h4>
                 <p class="contact-info-text">
-                  <a href="tel:+8801700000000">+880 1700-000-000</a><br />
-                  <a href="tel:+8801800000000">+880 1800-000-000</a>
+                  <a href="tel:{{general()->mobile}}">{{general()->mobile}}</a>
                 </p>
               </div>
             </div>
@@ -103,8 +105,7 @@
               <div class="contact-info-details">
                 <h4 class="contact-info-title">Email Addresses</h4>
                 <p class="contact-info-text">
-                  <a href="mailto:info@greenearth.org">info@greenearth.org</a><br />
-                  <a href="mailto:support@greenearth.org">support@greenearth.org</a>
+                  <a href="mailto:{{general()->email}}">{{general()->email}}</a>
                 </p>
               </div>
             </div>
@@ -117,10 +118,10 @@
               <div class="contact-info-details">
                 <h4 class="contact-info-title">Follow Us</h4>
                 <div class="contact-info-socials">
-                  <a href="#" class="contact-social-btn facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="contact-social-btn twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="contact-social-btn instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                  <a href="#" class="contact-social-btn youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                  <a href="{{general()->facebook_link ?: '#'}}" class="contact-social-btn facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="{{general()->twitter_link ?: '#'}}" class="contact-social-btn twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="{{general()->instagram_link ?: '#'}}" class="contact-social-btn instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="{{general()->youtube_link ?: '#'}}" class="contact-social-btn youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
               </div>
             </div>

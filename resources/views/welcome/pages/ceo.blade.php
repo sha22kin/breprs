@@ -49,11 +49,11 @@
                   </li>
                   <li class="ceo-quick-info-item">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:info@breprs.org">info@breprs.org</a>
+                    <a href="mailto:chairman@breprs.org.bd">chairman@breprs.org.bd</a>
                   </li>
                   <li class="ceo-quick-info-item">
                     <i class="fas fa-phone-alt"></i>
-                    <a href="tel:+8801721338925">+880 1721-338925</a>
+                    <a href="tel:+8801911740066">01911740066</a>
                   </li>
                   <li class="ceo-quick-info-item">
                     <i class="fas fa-map-marker-alt"></i>
@@ -237,7 +237,7 @@
               </div>
               <h3 class="ceo-cat-block-title">Environment, Rights &amp; Social Welfare</h3>
             </div>
-            <span class="ceo-cat-count-badge">5 Organizations</span>
+            <span class="ceo-cat-count-badge">4 Organizations</span>
           </div>
 
           <div class="row g-4">
@@ -302,21 +302,7 @@
               </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-12">
-              <div class="ceo-role-item-card">
-                <div class="ceo-role-card-top">
-                  <div class="ceo-role-card-icon icon-env-theme">
-                    <i class="fas fa-taxi"></i>
-                  </div>
-                  <span class="ceo-role-badge-tag badge-primary">Chairman</span>
-                </div>
-                <h4 class="ceo-role-org-name">Bangladesh CNG, Auto Rickshaw, Light Vehicle Driver - Malik Welfare
-                  Society</h4>
-                <p class="ceo-role-subdesc">
-                  <i class="fas fa-car text-warning"></i> Transport Workers &amp; Owners Welfare
-                </p>
-              </div>
-            </div>
+
           </div>
         </div>
 
@@ -372,7 +358,7 @@
                   </div>
                   <span class="ceo-role-badge-tag badge-gold">Proprietor</span>
                 </div>
-                <h4 class="ceo-role-org-name">K.B. Bricks</h4>
+                <h4 class="ceo-role-org-name">M/S K.B. Bricks</h4>
                 <p class="ceo-role-subdesc">
                   <i class="fas fa-hammer text-dark"></i> Manufacturing &amp; Building Materials
                 </p>
@@ -583,7 +569,7 @@
                   </div>
                   <span class="ceo-role-badge-tag badge-gold">President</span>
                 </div>
-                <h4 class="ceo-role-org-name">National Journalists' Association - Dhaka Division</h4>
+                <h4 class="ceo-role-org-name">জাতীয় সাংবাদিক সংস্থা - Dhaka Division</h4>
                 <p class="ceo-role-subdesc">
                   <i class="fas fa-bullhorn text-info"></i> Media &amp; Journalism Federation
                 </p>

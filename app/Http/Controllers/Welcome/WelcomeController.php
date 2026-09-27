@@ -319,6 +319,12 @@ class WelcomeController extends Controller
         return view(welcomeTheme().'pages.ceo',compact('page'));
       }
 
+      //Certificates Page
+      if($page->template=='Certificates' || $page->slug=='certificates'){
+        $certificates = \App\Models\Certificate::where('status','active')->latest()->get();
+        return view(welcomeTheme().'pages.certificates',compact('page', 'certificates'));
+      }
+
       //Campaigns Page
       if($page->template=='Campaigns' || $page->slug=='campaigns'){
         $campaigns = Post::where('type', 3)->where('status', 'active')->latest()->paginate(12);

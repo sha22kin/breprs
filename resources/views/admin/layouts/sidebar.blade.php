@@ -114,6 +114,10 @@
             </li>
             @endif
 
+            <li class="nx-item {{Request::is('admin/certificates*')? 'active' : ''}}">
+                <a class="nx-link" href="{{route('admin.certificates')}}"><i class="fa-solid fa-certificate"></i><span>Certificates</span></a>
+            </li>
+
             @if($can('medies','list'))
             <li class="nx-item {{Request::is('admin/medies*')? 'active' : ''}}">
                 <a class="nx-link" href="{{route('admin.medies')}}"><i class="fa-solid fa-photo-film"></i><span>Media Library</span></a>

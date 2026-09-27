@@ -145,12 +145,10 @@
         <!-- Content Column -->
         <div class="col-lg-6">
           <h2 class="about-mission-title">
-            Our Mission to <span>Protect</span> the Environment
+            Our <span>Mission</span>
           </h2>
           <p class="about-mission-text">
-            Green Earth Foundation is dedicated to environmental conservation through tree
-            plantation drives, preventing illegal logging, protecting forests, and creating
-            awareness about the importance of nature in our lives.
+            Our organization works to provide disaster relief, promote sanitation, education, technical training, social rights, rehabilitation, cultural preservation, public health, and environmental protection across Bangladesh. It also supports scientific development, women and third-gender empowerment, Islamic and higher education, heritage research, and public libraries to promote inclusive human development and equal access to knowledge.
           </p>
 
           <!-- Feature List -->

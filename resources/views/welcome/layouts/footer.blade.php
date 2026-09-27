@@ -40,7 +40,10 @@
             <i class="fas fa-map-marker-alt"></i>
           </div>
           <div class="footer-contact-details-wrap">
-            <p>{{general()->address_one ?: "2, R.K. Mission Road, Wari\nDhaka, Bangladesh"}}</p>
+            <p>{{general()->address_one}}</p>
+            @if(general()->address_two)
+            <p class="mt-2">{{general()->address_two}}</p>
+            @endif
           </div>
         </div>
         <div class="footer-contact-row">
@@ -48,7 +51,7 @@
             <i class="fas fa-phone-alt"></i>
           </div>
           <div class="footer-contact-details-wrap">
-            <p><a href="tel:{{general()->mobile ?: '+8801721338925'}}">{{general()->mobile ?: '+880 1721-338925'}}</a></p>
+            <p><a href="tel:{{general()->mobile}}">{{general()->mobile}}</a></p>
           </div>
         </div>
         <div class="footer-contact-row">
@@ -56,7 +59,7 @@
             <i class="fas fa-envelope"></i>
           </div>
           <div class="footer-contact-details-wrap">
-            <p><a href="mailto:{{general()->email ?: 'info@breprs.org'}}">{{general()->email ?: 'info@breprs.org'}}</a></p>
+            <p><a href="mailto:{{general()->email}}">{{general()->email}}</a></p>
           </div>
         </div>
       </div>

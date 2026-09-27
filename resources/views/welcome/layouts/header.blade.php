@@ -7,15 +7,15 @@
         <div class="topbar-contact-list">
           <span class="topbar-contact-item">
             <i class="fas fa-phone-alt"></i>
-            <a href="tel:{{general()->mobile ?: '+880 1721-338925'}}">{{general()->mobile ?: '+880 1721-338925'}}</a>
+            <a href="tel:{{general()->mobile}}">{{general()->mobile}}</a>
           </span>
           <span class="topbar-contact-item">
             <i class="fas fa-envelope"></i>
-            <a href="mailto:{{general()->email ?: 'info@breprs.org'}}">{{general()->email ?: 'info@breprs.org'}}</a>
+            <a href="mailto:{{general()->email}}">{{general()->email}}</a>
           </span>
           <span class="topbar-contact-item">
             <i class="fas fa-map-marker-alt"></i>
-            {{general()->address_one ?: '2, R.K. Mission Road, Wari, Dhaka, Bangladesh'}}
+            {{general()->address_one}}
           </span>
         </div>
       </div>

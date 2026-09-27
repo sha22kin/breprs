@@ -94,6 +94,14 @@ Route::get('/medies/delete/{id}',[AdminController::class,'mediesDelete'])->name(
 Route::get('/pages',[AdminController::class,'pages'])->name('pages');
 Route::any('/pages/{action}/{id?}',[AdminController::class,'pagesAction'])->name('pagesAction');
 //Page Management End
+    
+// Certificates Management
+Route::get('/certificates',[App\Http\Controllers\Admin\CertificateController::class,'index'])->name('certificates');
+Route::post('/certificates/store',[App\Http\Controllers\Admin\CertificateController::class,'store'])->name('certificates.store');
+Route::get('/certificates/edit/{id}',[App\Http\Controllers\Admin\CertificateController::class,'edit'])->name('certificates.edit');
+Route::post('/certificates/update/{id}',[App\Http\Controllers\Admin\CertificateController::class,'update'])->name('certificates.update');
+Route::get('/certificates/destroy/{id}',[App\Http\Controllers\Admin\CertificateController::class,'destroy'])->name('certificates.destroy');
+// Certificates Management End
 
 // Posts Comments Route End
 Route::get('/posts/comments/all',[PostsController::class,'postsCommentsAll'])->name('postsCommentsAll');

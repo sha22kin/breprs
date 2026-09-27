@@ -217,6 +217,7 @@
                                         <option value="Life Members" {{$page->template=='Life Members'?'selected':''}}>Life Members</option>
                                         <option value="Contributors" {{$page->template=='Contributors'?'selected':''}}>Contributors</option>
                                         <option value="Donations" {{$page->template=='Donations'?'selected':''}}>Donations</option>
+                                        <option value="Certificates" {{$page->template=='Certificates'?'selected':''}}>Certificates</option>
                                     </select>
                                     @if ($errors->has('template'))
                                     <p style="color: red; margin: 0; font-size: 10px;">{{ $errors->first('template') }}</p>
