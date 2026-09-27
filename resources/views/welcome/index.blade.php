@@ -529,8 +529,7 @@
         <span class="section-tagline"><i class="fas fa-comments"></i> Testimonials</span>
         <h2 class="section-main-title">What People <span>Say</span></h2>
         <p class="section-short-desc">
-          Hear from volunteers, community leaders, and supporters about their
-          experience with Green Earth Foundation.
+          Our organization works to provide disaster relief, promote sanitation, education, technical training, social rights, rehabilitation, cultural preservation, public health, and environmental protection across Bangladesh. It also supports scientific development, women and third-gender empowerment, Islamic and higher education, heritage research, and public libraries to promote inclusive human development and equal access to knowledge.
         </p>
         <div class="flat-divider">
           <i class="fas fa-heart"></i>
@@ -546,9 +545,7 @@
               <i class="fas fa-quote-left"></i>
             </div>
             <p class="testimonial-card-text">
-              "Volunteering with Green Earth has been the most fulfilling experience of my
-              life. Seeing the trees we planted grow into a small forest gives me incredible
-              joy and hope for the future."
+              "Volunteering with BREPRS has been the most fulfilling experience. Seeing their efforts in disaster relief and education transform communities gives me incredible joy and hope for the future."
             </p>
             <div class="testimonial-card-stars">
               <i class="fas fa-star"></i>
@@ -574,9 +571,7 @@
               <i class="fas fa-quote-left"></i>
             </div>
             <p class="testimonial-card-text">
-              "Green Earth's awareness program in our village completely changed how we
-              think about nature. Now every household plants at least 5 trees every year.
-              Our village is greener than ever."
+              "BREPRS's awareness program on public health and sanitation completely changed our village. Their focus on inclusive human development and women empowerment is truly making a difference."
             </p>
             <div class="testimonial-card-stars">
               <i class="fas fa-star"></i>
@@ -602,9 +597,7 @@
               <i class="fas fa-quote-left"></i>
             </div>
             <p class="testimonial-card-text">
-              "As a corporate sponsor, partnering with Green Earth Foundation has been
-              remarkable. Their transparency, dedication, and measurable results make
-              them a trustworthy environmental partner."
+              "As a partner, supporting BREPRS has been remarkable. Their dedication to scientific development, heritage research, and equal access to knowledge makes them a trustworthy organization."
             </p>
             <div class="testimonial-card-stars">
               <i class="fas fa-star"></i>
