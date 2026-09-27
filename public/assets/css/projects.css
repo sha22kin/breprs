@@ -1,0 +1,388 @@
+/* ==========================================================================
+   PROJECTS SECTION MAIN STYLING
+   ========================================================================== */
+
+/* Breadcrumb Header Banner */
+.projects-header-banner {
+  background-color: var(--color-primary);
+  padding: 45px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--color-gold);
+  color: var(--color-white);
+  position: relative;
+}
+
+.projects-header-title {
+font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    letter-spacing: -0.5px;
+}
+
+.projects-header-crumbs {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.projects-header-crumbs a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.projects-header-crumbs a:hover {
+  color: var(--color-white);
+}
+
+
+
+/* Category Filter Bar */
+.projects-filter-wrap {
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.projects-filter-bar {
+  display: inline-flex;
+  gap: 10px;
+  background-color: var(--color-bg-light);
+  padding: 6px;
+  border-radius: 30px;
+  border: 1px solid var(--color-border);
+}
+
+.projects-filter-btn {
+  background: transparent;
+  border: none;
+  padding: 8px 24px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  border-radius: 30px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.projects-filter-btn:hover {
+  color: var(--color-primary);
+}
+
+.projects-filter-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+/* Grid Wrapping and Layout spacing */
+.projects-grid-section {
+  padding: 20px 0 80px;
+}
+
+.project-card-flat {
+  position: relative; /* Support stretched-link */
+}
+
+/* Ensure stretched link spans the entire card, including positioned image overlays */
+.project-card-flat .stretched-link::after {
+  z-index: 9;
+}
+
+/* Custom location details and tags alignment */
+.project-card-badge--active {
+  background-color: var(--color-secondary);
+}
+
+.project-card-badge--upcoming {
+  background-color: var(--color-gold);
+  color: var(--color-primary);
+}
+
+.project-card-badge--completed {
+  background-color: #6c757d;
+}
+
+
+
+/* Premium 4-Column Card Design Overrides for Projects Page Grid on Desktop */
+@media (min-width: 992px) {
+  .projects-grid-section .project-card-media-wrap {
+    height: 145px !important; /* Shorter image height for better proportions in 4-column grids */
+  }
+
+  .projects-grid-section .project-card-content-wrap {
+    padding: 14px 16px !important; /* Reduced padding from 20px 24px */
+  }
+
+  .projects-grid-section .project-card-title-flat {
+    font-size: 15.5px !important; /* Reduced from 17px */
+    margin-bottom: 5px !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden; /* Clamp titles to 1 line to ensure uniformity */
+  }
+
+  .projects-grid-section .project-card-desc-flat {
+    font-size: 12px !important; /* Reduced from 13.5px */
+    margin-bottom: 12px !important;
+    line-height: 1.45 !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 2 !important;
+  }
+
+  .projects-grid-section .project-labels-row {
+    gap: 5px !important;
+    margin-bottom: 12px !important;
+  }
+
+  .projects-grid-section .project-label-tag {
+    font-size: 9.5px !important; /* Smaller pills so they fit in a single row */
+    padding: 3px 6px !important;
+  }
+
+  .projects-grid-section .project-card-footer-flat {
+    padding-top: 10px !important;
+  }
+
+  .projects-grid-section .project-footer-btn-flat {
+    font-size: 12.5px !important;
+  }
+}
+
+/* Custom responsive style overrides for mobile viewports */
+@media (max-width: 991.98px) {
+  .projects-header-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .projects-header-banner {
+    padding: 40px 0;
+  }
+
+  .projects-header-title {
+    font-size: 24px;
+  }
+
+  .projects-filter-wrap {
+    padding: 30px 0 15px;
+  }
+
+  .projects-filter-bar {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: flex-start;
+    padding: 4px;
+    border-radius: 8px;
+  }
+
+  .projects-filter-btn {
+    padding: 6px 16px;
+    font-size: 12.5px;
+    border-radius: 6px;
+  }
+
+  .projects-grid-section {
+    padding: 10px 0 60px;
+  }
+
+  /* Card content size compression on mobile to fit 2-column grid */
+  .project-card-media-wrap {
+    height: 120px;
+  }
+
+  .project-card-badge {
+    top: 10px;
+    right: 10px;
+    padding: 2px 6px;
+    font-size: 8px;
+  }
+
+  .project-card-location {
+    font-size: 9px;
+    padding: 2px 6px;
+    bottom: 8px;
+    left: 8px;
+  }
+
+  .project-card-content-wrap {
+    padding: 12px 14px;
+  }
+
+  .project-card-title-flat {
+    font-size: 13.5px;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .project-card-desc-flat {
+    font-size: 11.5px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: none;
+  }
+
+  .project-labels-row {
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  .project-label-tag {
+    font-size: 9px;
+    padding: 2px 5px;
+  }
+
+  .project-card-footer-flat {
+    padding-top: 8px;
+  }
+
+  .project-footer-btn-flat {
+    font-size: 11px;
+  }
+}
+
+/* ==========================================================================
+   CAMPAIGN DETAILS PAGE CUSTOM CTA BANNER (CARD STYLE)
+   ========================================================================== */
+.camp-details-cta-section {
+  background-color: var(--color-bg-light);
+  padding: 80px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.camp-details-cta-card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0c251c 100%);
+  padding: 50px 60px;
+  border-radius: var(--radius-lg);
+  border-left: 6px solid var(--color-gold);
+  box-shadow: 0 15px 40px rgba(27, 67, 50, 0.12);
+  color: var(--color-white);
+  transition: var(--transition-smooth);
+}
+
+.camp-details-cta-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(27, 67, 50, 0.16);
+}
+
+.camp-details-cta-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.camp-details-cta-text {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+.camp-details-cta-buttons {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.camp-details-cta-btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 28px;
+  background-color: var(--color-gold);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 13.5px;
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.camp-details-cta-btn-gold:hover {
+  background-color: var(--color-gold-hover);
+  border-color: var(--color-gold-hover);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+.camp-details-cta-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 26px;
+  background-color: transparent;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 13.5px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.camp-details-cta-btn-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 991.98px) {
+  .camp-details-cta-card {
+    padding: 40px 30px;
+  }
+  .camp-details-cta-title {
+    font-size: 26px;
+  }
+  .camp-details-cta-text {
+    margin-bottom: 25px;
+  }
+  .camp-details-cta-buttons {
+    flex-direction: row;
+  }
+  .camp-details-cta-btn-gold,
+  .camp-details-cta-btn-outline {
+    flex: 1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .camp-details-cta-section {
+    padding: 50px 0;
+  }
+  .camp-details-cta-card {
+    padding: 30px 20px;
+    border-left-width: 4px;
+  }
+  .camp-details-cta-title {
+    font-size: 22px;
+  }
+  .camp-details-cta-text {
+    font-size: 13.5px;
+  }
+  .camp-details-cta-buttons {
+    flex-direction: column;
+  }
+  .camp-details-cta-btn-gold,
+  .camp-details-cta-btn-outline {
+    width: 100%;
+    flex: none;
+  }
+}

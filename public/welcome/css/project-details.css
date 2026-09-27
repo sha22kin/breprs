@@ -1,0 +1,376 @@
+/* ==========================================================================
+   GREEN EARTH NGO - PROJECT DETAILS PAGE STYLESHEET
+   ========================================================================== */
+
+/* Page Header Banner */
+.proj-details-header-banner {
+  background-color: var(--color-primary);
+  padding: 45px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--color-gold);
+  color: var(--color-white);
+  position: relative;
+}
+
+.proj-details-banner-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  letter-spacing: -0.5px;
+}
+
+.proj-details-banner-breadcrumbs {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.proj-details-banner-breadcrumbs a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.proj-details-banner-breadcrumbs a:hover {
+  color: var(--color-white);
+}
+
+/* Layout Content Wrapper */
+.proj-details-section {
+  background-color: var(--color-bg-light);
+  padding: 25px 0;
+}
+
+/* Details Card Container */
+.proj-details-card {
+  background-color: var(--color-white);
+  padding: 50px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* Cover Image Wrap */
+.proj-details-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 35px;
+  border: 1px solid var(--color-border-light);
+}
+
+.proj-details-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.proj-details-img-wrap:hover .proj-details-img {
+  transform: scale(1.03);
+}
+
+/* Project Meta Info Row */
+.proj-details-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.proj-details-meta-item {
+  font-size: 12.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.proj-details-meta-item--location {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border-accent);
+  color: var(--color-primary-light);
+}
+
+.proj-details-meta-item--status {
+  background-color: rgba(45, 106, 79, 0.1);
+  border: 1px solid rgba(45, 106, 79, 0.2);
+  color: var(--color-secondary);
+}
+
+.proj-details-meta-item--date {
+  background-color: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  color: var(--color-gold);
+}
+
+/* Typography & Content styling */
+.proj-details-title-flat {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.proj-details-text {
+  font-size: 15.5px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.proj-details-text:last-of-type {
+  margin-bottom: 35px;
+}
+
+/* Checklist / Objectives Section */
+.proj-details-objectives-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--color-border-light);
+}
+
+.proj-details-objectives-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.proj-details-objective-item {
+  font-size: 14.5px;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.proj-details-objective-item i {
+  color: var(--color-secondary);
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   CAMPAIGN DETAILS PAGE CUSTOM CTA BANNER (CARD STYLE)
+   ========================================================================== */
+.camp-details-cta-section {
+  background-color: var(--color-bg-light);
+  padding: 25px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.camp-details-cta-card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0c251c 100%);
+  padding: 50px 60px;
+  border-radius: var(--radius-lg);
+  border-left: 6px solid var(--color-gold);
+  box-shadow: 0 15px 40px rgba(27, 67, 50, 0.12);
+  color: var(--color-white);
+  transition: var(--transition-smooth);
+}
+
+.camp-details-cta-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(27, 67, 50, 0.16);
+}
+
+.camp-details-cta-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.camp-details-cta-text {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+.camp-details-cta-buttons {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.camp-details-cta-btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 28px;
+  background-color: var(--color-gold);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 13.5px;
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.camp-details-cta-btn-gold:hover {
+  background-color: var(--color-gold-hover);
+  border-color: var(--color-gold-hover);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+.camp-details-cta-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 26px;
+  background-color: transparent;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 13.5px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.camp-details-cta-btn-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS OVERRIDES
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .proj-details-section {
+    padding: 60px 0;
+  }
+
+  .proj-details-card {
+    padding: 30px;
+  }
+
+  .proj-details-img-wrap {
+    height: 350px;
+  }
+
+  .proj-details-title-flat {
+    font-size: 26px;
+  }
+
+  .camp-details-cta-card {
+    padding: 40px 30px;
+  }
+
+  .camp-details-cta-title {
+    font-size: 26px;
+  }
+
+  .camp-details-cta-text {
+    margin-bottom: 25px;
+  }
+
+  .camp-details-cta-buttons {
+    flex-direction: row;
+  }
+
+  .camp-details-cta-btn-gold,
+  .camp-details-cta-btn-outline {
+    flex: 1;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .proj-details-header-banner {
+    padding: 40px 0;
+  }
+
+  .proj-details-banner-title {
+    font-size: 24px;
+  }
+
+  .proj-details-objectives-list {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .proj-details-section {
+    padding: 50px 0;
+  }
+
+  .proj-details-card {
+    padding: 20px;
+  }
+
+  .proj-details-img-wrap {
+    height: 220px;
+    margin-bottom: 25px;
+  }
+
+  .proj-details-meta-row {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .proj-details-meta-item {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .proj-details-title-flat {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .proj-details-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  .camp-details-cta-section {
+    padding: 50px 0;
+  }
+
+  .camp-details-cta-card {
+    padding: 30px 20px;
+    border-left-width: 4px;
+  }
+
+  .camp-details-cta-title {
+    font-size: 22px;
+  }
+
+  .camp-details-cta-text {
+    font-size: 13.5px;
+  }
+
+  .camp-details-cta-buttons {
+    flex-direction: column;
+  }
+
+  .camp-details-cta-btn-gold,
+  .camp-details-cta-btn-outline {
+    width: 100%;
+    flex: none;
+  }
+}

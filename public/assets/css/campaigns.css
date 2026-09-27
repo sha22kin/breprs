@@ -1,0 +1,146 @@
+/* ==========================================================================
+   GREEN EARTH NGO - CAMPAIGNS PAGE STYLESHEET
+   ========================================================================== */
+
+/* Page Header Banner */
+.campaigns-header-banner {
+  background-color: var(--color-primary);
+  padding: 45px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--color-gold);
+  color: var(--color-white);
+  position: relative;
+}
+
+.campaigns-banner-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  letter-spacing: -0.5px;
+}
+
+.campaigns-banner-breadcrumbs {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.campaigns-banner-breadcrumbs a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.campaigns-banner-breadcrumbs a:hover {
+  color: var(--color-white);
+}
+
+/* Filter Controls */
+.campaigns-filter-section {
+  background-color: var(--color-bg-light);
+  padding: 30px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.campaigns-filter-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.campaigns-filter-btn {
+  padding: 8px 22px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 30px;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.campaigns-filter-btn:hover,
+.campaigns-filter-btn.active {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border-color: var(--color-secondary);
+  transform: translateY(-1px);
+}
+
+/* Grid layout spacing */
+.campaigns-grid-section {
+  background-color: var(--color-white);
+  padding: 80px 0;
+}
+
+/* Enforce 2-line text limit on card descriptions */
+.campaign-card-desc-flat {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive Overrides */
+@media (max-width: 767.98px) {
+  .campaigns-header-banner {
+    padding: 40px 0;
+  }
+
+  .campaigns-banner-title {
+    font-size: 24px;
+  }
+
+  .campaigns-grid-section {
+    padding: 50px 0;
+  }
+}
+
+/* Mobile specific overrides for 2-column Campaign Grid Layout */
+@media (max-width: 575.98px) {
+  .campaigns-filter-btn {
+    padding: 6px 14px;
+    font-size: 11.5px;
+  }
+
+  .campaigns-filter-row {
+    gap: 8px;
+  }
+
+  .campaign-card-media {
+    height: 110px;
+  }
+
+  .campaign-card-content {
+    padding: 12px;
+  }
+
+  .campaign-card-title-flat {
+    font-size: 12.5px;
+    margin-bottom: 4px;
+    line-height: 1.35;
+  }
+
+  .campaign-card-desc-flat {
+    font-size: 11px;
+    line-height: 1.45;
+    margin-bottom: 10px;
+    -webkit-line-clamp: 2;
+  }
+
+  .campaign-card-action-link {
+    font-size: 11px;
+    gap: 4px;
+  }
+
+  .campaign-card-tag {
+    top: 8px;
+    right: 8px;
+    padding: 2px 6px;
+    font-size: 7.5px;
+  }
+}

@@ -1,0 +1,300 @@
+/* ==========================================================================
+   GREEN EARTH NGO - OUR MEMBERS PAGE SPECIFIC STYLESHEET
+   ========================================================================== */
+
+/* Page Header Banner */
+.members-header-banner {
+  background-color: var(--color-primary);
+  padding: 45px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--color-gold);
+  color: var(--color-white);
+  position: relative;
+}
+
+.members-banner-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  letter-spacing: -0.5px;
+}
+
+.members-banner-crumbs {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.members-banner-crumbs a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.members-banner-crumbs a:hover {
+  color: var(--color-white);
+}
+
+/* Grid Layout & Section */
+.members-grid-section {
+  background-color: var(--color-bg-light);
+  padding: 80px 0;
+}
+
+/* Team Member Profile Card */
+.members-profile-card-flat {
+  background-color: var(--color-white);
+  border: 1px solid rgb(240 33 82);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  position: relative;
+}
+
+.members-profile-card-flat:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 36px rgba(46, 117, 89, 0.12);
+  border-color: var(--color-border-accent);
+}
+
+/* Image container */
+.members-card-media-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 270px;
+  background-color: var(--color-bg-light);
+}
+
+.members-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.members-profile-card-flat:hover .members-card-img {
+  transform: scale(1.1);
+}
+
+/* Float Glass ID Badge */
+.members-card-id-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(27, 67, 50, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: var(--color-gold);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  letter-spacing: 0.5px;
+  z-index: 5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Hover Overlay for Social Icons */
+.members-card-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(27, 67, 50, 0.9), rgba(64, 145, 108, 0.45));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition-smooth);
+  z-index: 2;
+}
+
+.members-profile-card-flat:hover .members-card-image-overlay {
+  opacity: 1;
+}
+
+/* Social links list inside overlay */
+.members-overlay-social-list {
+  display: flex;
+  gap: 12px;
+  transform: translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.members-profile-card-flat:hover .members-overlay-social-list {
+  transform: translateY(0);
+}
+
+.members-overlay-social-link {
+  width: 38px;
+  height: 38px;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-radius: var(--radius-round);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transition: var(--transition-fast);
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.members-overlay-social-link:hover {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  transform: scale(1.1);
+}
+
+/* Card Body Content */
+.members-card-body-flat {
+  padding: 22px 18px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+/* Typography styles */
+.members-card-name-flat {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+  transition: var(--transition-fast);
+}
+
+.members-profile-card-flat:hover .members-card-name-flat {
+  color: var(--color-secondary);
+}
+
+.members-card-occupation-label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+/* Info metadata block (Phone pill button) */
+.members-card-info-wrap {
+  margin-top: 4px;
+}
+
+.members-card-meta-phone {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  transition: var(--transition-fast);
+  background-color: var(--color-bg-light);
+  padding: 6px 16px;
+  border-radius: 30px;
+  margin: 0 auto;
+  width: fit-content;
+  border: 1px solid var(--color-border-light);
+}
+
+.members-card-meta-phone i {
+  color: var(--color-secondary);
+  font-size: 13px;
+}
+
+.members-card-meta-phone a {
+  color: var(--color-text-dark);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.members-card-meta-phone:hover {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-border-accent);
+}
+
+.members-card-meta-phone:hover a {
+  color: var(--color-primary);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 991.98px) {
+  .members-grid-section {
+    padding: 60px 0;
+  }
+  .members-card-media-box {
+    height: 240px;
+  }
+  .members-card-name-flat {
+    font-size: 16px;
+  }
+  .members-card-occupation-label {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .members-header-banner {
+    padding: 40px 0;
+  }
+  .members-banner-title {
+    font-size: 30px;
+  }
+  .members-grid-section {
+    padding: 50px 0;
+  }
+  .members-card-media-box {
+    height: 220px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .members-card-media-box {
+    height: 180px;
+  }
+  .members-card-id-badge {
+    top: 10px;
+    right: 10px;
+    font-size: 9.5px;
+    padding: 2px 8px;
+  }
+  .members-card-body-flat {
+    padding: 15px 10px;
+  }
+  .members-card-name-flat {
+    font-size: 14.5px;
+  }
+  .members-card-occupation-label {
+    font-size: 9px;
+    margin-bottom: 8px;
+    letter-spacing: 0;
+  }
+  .members-card-meta-phone {
+    font-size: 10.5px;
+    padding: 4px 10px;
+    gap: 6px;
+  }
+  .members-overlay-social-link {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+  .members-overlay-social-list {
+    gap: 8px;
+  }
+}

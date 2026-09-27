@@ -1,0 +1,128 @@
+/* ==========================================================================
+   GREEN EARTH NGO - SUCCESS STORIES PAGE STYLESHEET
+   ========================================================================== */
+
+/* Page Header Banner */
+.stories-header-banner {
+  background-color: var(--color-primary);
+  padding: 45px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--color-gold);
+  color: var(--color-white);
+  position: relative;
+}
+
+.stories-banner-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  letter-spacing: -0.5px;
+}
+
+.stories-banner-crumbs {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.stories-banner-crumbs a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.stories-banner-crumbs a:hover {
+  color: var(--color-white);
+}
+
+/* Grid Layout Section */
+.stories-grid-section {
+  background-color: var(--color-white);
+  padding: 25px 0;
+}
+
+/* Pagination Styling */
+.stories-pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.stories-pagination-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stories-pagination-item {
+  display: inline-block;
+}
+
+.stories-pagination-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-round);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+  color: var(--color-text-dark);
+  font-size: 14px;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+}
+
+.stories-pagination-link:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  border-color: var(--color-secondary);
+  transform: translateY(-2px);
+}
+
+.stories-pagination-item.active .stories-pagination-link {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.stories-pagination-link.disabled {
+  color: var(--color-text-light);
+  pointer-events: none;
+  background-color: var(--color-border-light);
+  border-color: var(--color-border-light);
+}
+
+/* Responsive Overrides */
+@media (max-width: 767.98px) {
+  .stories-grid-section {
+    padding: 50px 0;
+  }
+  .stories-header-banner {
+    padding: 40px 0;
+  }
+  .stories-banner-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .stories-pagination-link {
+    width: 36px;
+    height: 36px;
+    font-size: 13px;
+  }
+}
+
+/* Block-level link wrapper for cards */
+.story-custom-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}

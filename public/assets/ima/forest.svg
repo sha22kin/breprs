@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Left Tree (Background, soft fill) -->
+  <path d="M8 17H3l4-5H4l5-6 5 6h-3l4 5H8z" fill="currentColor" fill-opacity="0.25" stroke="none" />
+  <path d="M8 17v3" />
+
+  <!-- Right Tree (Foreground, solid outline & fill) -->
+  <path d="M16 17h-5l4-5h-3l5-6 5 6h-3l4 5h-5z" fill="currentColor" />
+  <path d="M16 17v3" />
+</svg>

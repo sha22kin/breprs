@@ -1,0 +1,402 @@
+/* ==========================================================================
+   BANGLADESH RIVER ENVIRONMENT PROTECTION RIGHTS SOCIETY - ABOUT US CSS
+   ========================================================================== */
+
+/* Page Header Banner */
+.about-header-banner {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  padding: 55px 0;
+  text-align: center;
+  border-bottom: 4px solid var(--color-gold);
+  color: var(--color-white);
+  position: relative;
+}
+
+.about-banner-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.about-banner-crumbs {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.about-banner-crumbs a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.about-banner-crumbs a:hover {
+  color: var(--color-white);
+}
+
+/* Profile Section */
+.abt-profile-sec {
+  padding: 80px 0;
+  background-color: var(--color-white);
+}
+
+.abt-sec-subtitle {
+  display: inline-block;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+  background-color: rgba(64, 145, 108, 0.1);
+  padding: 5px 16px;
+  border-radius: 20px;
+}
+
+.abt-sec-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 18px;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.abt-sec-title span {
+  color: var(--color-secondary);
+}
+
+.abt-sec-desc {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-bottom: 45px;
+  max-width: 850px;
+}
+
+/* Profile Identity Cards (2x2 Grid, Spacious & Modern) */
+.abt-profile-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 35px 30px;
+  height: 100%;
+  transition: var(--transition-smooth);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.abt-profile-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--color-secondary);
+  transition: var(--transition-fast);
+}
+
+.abt-profile-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(27, 67, 50, 0.12);
+  border-color: var(--color-border-accent);
+  background: linear-gradient(135deg, #ffffff 0%, #f4faf6 100%);
+}
+
+.abt-profile-card:hover::before {
+  background-color: var(--color-gold);
+}
+
+.abt-profile-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+}
+
+.abt-profile-card:hover .abt-profile-icon {
+  transform: scale(1.08);
+}
+
+/* Icon Theme Variations */
+.ic-theme-emerald {
+  background-color: rgba(46, 117, 89, 0.12);
+  color: var(--color-secondary);
+}
+
+.ic-theme-amber {
+  background-color: rgba(217, 119, 6, 0.12);
+  color: var(--color-gold-hover);
+}
+
+.ic-theme-blue {
+  background-color: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+}
+
+.ic-theme-purple {
+  background-color: rgba(147, 51, 234, 0.12);
+  color: #9333ea;
+}
+
+.abt-profile-content {
+  flex-grow: 1;
+}
+
+.abt-profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.abt-profile-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0;
+}
+
+.abt-profile-badge {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-gold-hover);
+  background-color: rgba(245, 158, 11, 0.14);
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.abt-profile-card-text {
+  font-size: 15px;
+  color: var(--color-text-dark);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.abt-profile-card-text strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Objectives Section */
+.abt-obj-sec {
+  padding: 80px 0;
+  background-color: var(--color-bg-light);
+  border-top: 1px solid var(--color-border-light);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.abt-obj-header {
+  margin-bottom: 50px;
+}
+
+.abt-obj-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  height: 100%;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.abt-obj-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
+  border-color: var(--color-secondary);
+}
+
+.abt-obj-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.abt-obj-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.abt-obj-num-tag {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--color-primary-light);
+  background: var(--color-border-light);
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.abt-obj-card-title {
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.abt-obj-card-text {
+  font-size: 14.5px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+/* Icon Color Variants */
+.obj-ic-emerald { background-color: rgba(46, 117, 89, 0.12); color: #2e7559; }
+.obj-ic-blue    { background-color: rgba(37, 99, 235, 0.12); color: #2563eb; }
+.obj-ic-amber   { background-color: rgba(217, 119, 6, 0.12); color: #d97706; }
+.obj-ic-purple  { background-color: rgba(147, 51, 234, 0.12); color: #9333ea; }
+.obj-ic-rose    { background-color: rgba(225, 29, 72, 0.12); color: #e11d48; }
+.obj-ic-teal    { background-color: rgba(13, 148, 136, 0.12); color: #0d9488; }
+.obj-ic-indigo  { background-color: rgba(79, 70, 229, 0.12); color: #4f46e5; }
+.obj-ic-cyan    { background-color: rgba(6, 182, 212, 0.12); color: #06b6d4; }
+
+/* River Banner Focus Section */
+.abt-focus-sec {
+  padding: 80px 0;
+  background-color: var(--color-white);
+}
+
+.abt-focus-card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #112a20 100%);
+  border-radius: var(--radius-lg);
+  padding: 50px 40px;
+  color: var(--color-white);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(27, 67, 50, 0.25);
+}
+
+.abt-focus-badge {
+  color: var(--color-gold);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.abt-focus-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.abt-focus-text {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.75;
+  margin-bottom: 25px;
+}
+
+.abt-focus-stats-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 25px;
+  margin-top: 20px;
+}
+
+.abt-focus-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.abt-focus-stat-icon {
+  font-size: 24px;
+  color: var(--color-accent);
+}
+
+.abt-focus-stat-val {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-white);
+  display: block;
+  line-height: 1.1;
+}
+
+.abt-focus-stat-lbl {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Offcanvas brand logo styling (replaces inline CSS) */
+.offcanvas-header .navbar-brand-logo-img {
+  height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+  .abt-profile-sec,
+  .abt-obj-sec,
+  .abt-focus-sec {
+    padding: 60px 0;
+  }
+  .abt-sec-title {
+    font-size: 28px;
+  }
+  .abt-focus-title {
+    font-size: 26px;
+  }
+  .abt-focus-card {
+    padding: 35px 25px;
+  }
+  .abt-profile-card {
+    padding: 28px 22px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-header-banner {
+    padding: 40px 0;
+  }
+  .about-banner-title {
+    font-size: 28px;
+  }
+  .abt-sec-title {
+    font-size: 24px;
+  }
+  .abt-obj-card {
+    padding: 24px 20px;
+  }
+  .abt-focus-stats-row {
+    gap: 20px;
+  }
+  .abt-profile-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,279 @@
+/* ==========================================================================
+   GREEN EARTH NGO - VOLUNTEER REGISTRATION FORM STYLESHEET
+   ========================================================================== */
+
+/* Page Header Banner */
+.volunteer-header-banner {
+  background-color: var(--color-primary);
+  padding: 45px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--color-gold);
+  color: var(--color-white);
+  position: relative;
+}
+
+.volunteer-banner-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  letter-spacing: -0.5px;
+}
+
+.volunteer-banner-crumbs {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.volunteer-banner-crumbs a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.volunteer-banner-crumbs a:hover {
+  color: var(--color-white);
+}
+
+/* Layout Content Wrapper */
+.volunteer-main-section {
+  background-color: var(--color-bg-light);
+  padding: 80px 0;
+}
+
+/* Registration Form Card styling */
+.volunteer-form-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.volunteer-form-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.volunteer-form-subtitle {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+}
+
+/* Section Headings inside Form */
+.volunteer-form-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid var(--color-border-light);
+  padding-bottom: 8px;
+  margin-top: 15px;
+}
+
+.volunteer-form-group {
+  margin-bottom: 24px;
+}
+
+.volunteer-form-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.volunteer-form-control {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 11px 16px;
+  font-size: 14px;
+  outline: none;
+  transition: var(--transition-fast);
+  background-color: var(--color-white);
+}
+
+.volunteer-form-control:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(46, 117, 89, 0.1);
+}
+
+textarea.volunteer-form-control {
+  height: 120px;
+  resize: none;
+}
+
+select.volunteer-form-control {
+  cursor: pointer;
+}
+
+/* Customized File Upload Wrapper */
+.volunteer-file-upload-wrapper {
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-bg-light);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.volunteer-file-upload-wrapper:hover {
+  border-color: var(--color-secondary);
+  background-color: rgba(46, 117, 89, 0.02);
+}
+
+.volunteer-file-upload-icon {
+  font-size: 26px;
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+}
+
+.volunteer-file-upload-text {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+.volunteer-file-upload-input {
+  display: none;
+}
+
+/* Checkboxes Group */
+.volunteer-checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.volunteer-checkbox-input {
+  width: 18px;
+  height: 18px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--color-border);
+  accent-color: var(--color-secondary);
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.volunteer-checkbox-label {
+  font-size: 13.5px;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.volunteer-checkbox-label a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.volunteer-checkbox-label a:hover {
+  color: var(--color-primary);
+}
+
+/* Submit Button */
+.volunteer-form-submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 35px;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 14.5px;
+  border: none;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.volunteer-form-submit-btn:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(27, 67, 50, 0.15);
+}
+
+/* Responsive Overrides */
+@media (max-width: 991.98px) {
+  .volunteer-main-section {
+    padding: 50px 0;
+  }
+  .volunteer-form-card {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .volunteer-header-banner {
+    padding: 40px 0;
+  }
+  .volunteer-banner-title {
+    font-size: 30px;
+  }
+}
+
+/* Dynamic Social links styles */
+.volunteer-social-select {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 11px 16px;
+  font-size: 14px;
+  outline: none;
+  background-color: var(--color-white);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.volunteer-social-input {
+  flex-grow: 1;
+}
+
+.volunteer-social-remove-btn {
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-white);
+  color: #dc3545;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.volunteer-social-remove-btn:hover {
+  background-color: #dc3545;
+  color: var(--color-white);
+  border-color: #dc3545;
+}
+
+.volunteer-social-add-btn {
+  border: 1px dashed var(--color-secondary);
+  color: var(--color-secondary);
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  font-weight: 600;
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.volunteer-social-add-btn:hover {
+  background-color: rgba(46, 117, 89, 0.05);
+  border-style: solid;
+}

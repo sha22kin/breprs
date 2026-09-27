@@ -1,0 +1,240 @@
+/* ==========================================================================
+   BANGLADESH RIVER ENVIRONMENT PROTECTION RIGHTS SOCIETY - AUTHENTICATION CSS
+   ========================================================================== */
+
+/* Auth Page Section */
+.auth-main-sec {
+  padding: 80px 0;
+  background-color: var(--color-bg-light);
+  min-height: calc(100vh - 350px);
+  display: flex;
+  align-items: center;
+}
+
+/* Container & Card Layout */
+.auth-card-wrap {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.auth-card-wrap-sm {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.auth-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 45px 40px;
+  box-shadow: 0 10px 35px rgba(27, 67, 50, 0.06);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.auth-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-gold) 100%);
+}
+
+.auth-card-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.auth-badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background-color: rgba(64, 145, 108, 0.1);
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.auth-card-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.auth-card-subtitle {
+  font-size: 14.5px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Input Icon Group */
+.auth-input-group {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.auth-input-label {
+  display: block;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+}
+
+.auth-input-icon-box {
+  position: relative;
+}
+
+.auth-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  color: var(--color-text-light);
+  font-size: 16px;
+  transition: var(--transition-fast);
+  pointer-events: none;
+}
+
+.auth-input-field {
+  width: 100%;
+  height: 50px;
+  padding: 10px 16px 10px 46px;
+  font-size: 14.5px;
+  font-family: var(--font-main);
+  color: var(--color-text-dark);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: var(--transition-fast);
+}
+
+.auth-input-textarea {
+  height: 90px;
+  padding-top: 14px;
+  resize: vertical;
+}
+
+.auth-input-field:focus {
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 4px rgba(64, 145, 108, 0.12);
+}
+
+.auth-input-field:focus + .auth-input-icon,
+.auth-input-icon-box:focus-within .auth-input-icon {
+  color: var(--color-secondary);
+}
+
+/* Checkbox & Options */
+.auth-flex-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  font-size: 13.5px;
+}
+
+.auth-form-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auth-check-input {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.auth-check-label {
+  color: var(--color-text-dark);
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.auth-link {
+  color: var(--color-secondary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.auth-link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.auth-submit-btn {
+  width: 100%;
+  height: 52px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 6px 18px rgba(27, 67, 50, 0.2);
+}
+
+.auth-submit-btn:hover {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(27, 67, 50, 0.3);
+}
+
+/* Auth Card Footer */
+.auth-card-footer {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border-light);
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.auth-card-footer a {
+  color: var(--color-secondary);
+  font-weight: 700;
+  margin-left: 4px;
+}
+
+.auth-card-footer a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 767.98px) {
+  .auth-main-sec {
+    padding: 50px 0;
+  }
+  .auth-card {
+    padding: 30px 20px;
+  }
+  .auth-card-title {
+    font-size: 24px;
+  }
+  .auth-flex-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

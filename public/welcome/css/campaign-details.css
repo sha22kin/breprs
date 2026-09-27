@@ -1,0 +1,678 @@
+/* ==========================================================================
+   GREEN EARTH NGO - CAMPAIGN DETAILS PAGE STYLESHEET
+   ========================================================================== */
+
+/* Page Header Banner */
+.camp-details-header-banner {
+  background-color: var(--color-primary);
+  padding: 45px 0;
+  text-align: center;
+  border-bottom: 3px solid var(--color-gold);
+  color: var(--color-white);
+  position: relative;
+}
+
+.camp-details-banner-title {
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  letter-spacing: -0.5px;
+}
+
+.camp-details-banner-breadcrumbs {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.camp-details-banner-breadcrumbs a {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.camp-details-banner-breadcrumbs a:hover {
+  color: var(--color-white);
+}
+
+/* Layout Content Wrapper */
+.camp-details-section {
+  background-color: var(--color-bg-light);
+  padding: 80px 0;
+}
+
+/* Left Card Container */
+.camp-details-left-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.camp-details-img-wrap {
+  width: 100%;
+  height: 450px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.camp-details-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.camp-details-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.camp-details-cat-tag {
+  background-color: rgba(143, 188, 143, 0.2);
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
+}
+
+.camp-details-status-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+}
+
+.camp-details-date-lbl {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.camp-details-date-lbl i {
+  margin-right: 6px;
+  color: var(--color-secondary);
+}
+
+.camp-details-title-heading {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--color-text-dark);
+  margin-bottom: 25px;
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+}
+
+.camp-details-rich-text p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+}
+
+/* Objectives Box */
+.camp-details-objectives-card {
+  margin: 35px 0;
+  padding: 25px;
+  background-color: var(--color-bg-light);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.camp-details-objectives-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 15px;
+}
+
+.camp-details-objectives-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.camp-details-objective-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14.5px;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.camp-details-objective-item:last-child {
+  margin-bottom: 0;
+}
+
+.camp-details-objective-item i {
+  color: var(--color-secondary);
+  font-size: 16px;
+  margin-top: 3px;
+}
+
+/* Volunteer Sign Up form card */
+.camp-details-volunteer-card {
+  border-top: 1px solid var(--color-border);
+  padding-top: 35px;
+  margin-top: 40px;
+}
+
+.camp-details-volunteer-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-text-dark);
+  margin-bottom: 10px;
+}
+
+.camp-details-volunteer-subtitle {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 25px;
+}
+
+.camp-details-form-group {
+  margin-bottom: 20px;
+}
+
+.camp-details-form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.camp-details-input-field {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-dark);
+  transition: var(--transition-smooth);
+}
+
+.camp-details-input-field:focus {
+  background-color: var(--color-white);
+  border-color: var(--color-secondary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
+}
+
+.camp-details-textarea-field {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.camp-details-submit-btn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 700;
+  padding: 12px 30px;
+  font-size: 14px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.camp-details-submit-btn:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-1px);
+}
+
+/* Right Sidebar Containers */
+.camp-details-sidebar-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+/* Progress Sidebar Card */
+.camp-details-progress-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-text-dark);
+  margin-bottom: 20px;
+}
+
+.camp-details-bar-outer {
+  height: 8px;
+  background-color: var(--color-border-light);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.camp-details-bar-fill {
+  height: 100%;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  transition: width 1.2s ease-in-out;
+}
+
+.camp-details-amounts-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.camp-details-amount-block {
+  text-align: left;
+}
+
+.camp-details-amount-val {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.camp-details-amount-lbl {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.camp-details-donate-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: var(--transition-smooth);
+}
+
+.camp-details-donate-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+/* Sidebar Widget Headings */
+.camp-details-widget-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--color-text-dark);
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.camp-details-widget-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+}
+
+/* Organizer Card Details */
+.camp-details-organizer-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.camp-details-organizer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(45, 106, 79, 0.1);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.camp-details-organizer-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.camp-details-organizer-title {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.camp-details-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.camp-details-contact-item a {
+  color: var(--color-text-muted);
+  transition: var(--transition-fast);
+}
+
+.camp-details-contact-item a:hover {
+  color: var(--color-secondary);
+}
+
+.camp-details-contact-item i {
+  color: var(--color-secondary);
+  width: 16px;
+}
+
+/* Recent Campaign Items Widget */
+.camp-details-recent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.camp-details-recent-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.camp-details-recent-thumb-wrap {
+  width: 65px;
+  height: 65px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.camp-details-recent-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.camp-details-recent-item:hover .camp-details-recent-thumb {
+  transform: scale(1.08);
+}
+
+.camp-details-recent-info {
+  flex: 1;
+}
+
+.camp-details-recent-item-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+  line-height: 1.35;
+}
+
+.camp-details-recent-item-title a {
+  color: var(--color-text-dark);
+  transition: var(--transition-fast);
+}
+
+.camp-details-recent-item-title a:hover {
+  color: var(--color-secondary);
+}
+
+.camp-details-recent-item-meta {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+/* Responsive Styles overrides */
+@media (max-width: 991.98px) {
+  .camp-details-section {
+    padding: 60px 0;
+  }
+
+  .camp-details-left-card {
+    padding: 30px;
+  }
+
+  .camp-details-img-wrap {
+    height: 350px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .camp-details-header-banner {
+    padding: 40px 0;
+  }
+
+  .camp-details-banner-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .camp-details-left-card {
+    padding: 20px;
+    border-radius: var(--radius-sm);
+  }
+
+  .camp-details-img-wrap {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .camp-details-title-heading {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .camp-details-rich-text p {
+    font-size: 13.5px;
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+
+  .camp-details-objectives-card {
+    padding: 15px;
+    margin: 20px 0;
+  }
+
+  .camp-details-objective-item {
+    font-size: 12.5px;
+    margin-bottom: 10px;
+  }
+
+  .camp-details-volunteer-card {
+    padding-top: 25px;
+    margin-top: 25px;
+  }
+
+  .camp-details-volunteer-title {
+    font-size: 18px;
+  }
+
+  .camp-details-input-field {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .camp-details-submit-btn {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .camp-details-sidebar-card {
+    padding: 20px;
+    border-radius: var(--radius-sm);
+  }
+
+  .camp-details-progress-title {
+    font-size: 16px;
+  }
+
+  .camp-details-amount-val {
+    font-size: 15px;
+  }
+
+  .camp-details-amount-lbl {
+    font-size: 9.5px;
+  }
+}
+
+/* ==========================================================================
+   CAMPAIGN DETAILS PAGE CUSTOM CTA BANNER (CARD STYLE)
+   ========================================================================== */
+.camp-details-cta-section {
+  background-color: var(--color-bg-light);
+  padding: 80px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.camp-details-cta-card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, #0c251c 100%);
+  padding: 50px 60px;
+  border-radius: var(--radius-lg);
+  border-left: 6px solid var(--color-gold);
+  box-shadow: 0 15px 40px rgba(27, 67, 50, 0.12);
+  color: var(--color-white);
+  transition: var(--transition-smooth);
+}
+
+.camp-details-cta-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 45px rgba(27, 67, 50, 0.16);
+}
+
+.camp-details-cta-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-white);
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+.camp-details-cta-text {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+.camp-details-cta-buttons {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.camp-details-cta-btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 28px;
+  background-color: var(--color-gold);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 13.5px;
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.camp-details-cta-btn-gold:hover {
+  background-color: var(--color-gold-hover);
+  border-color: var(--color-gold-hover);
+  color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+.camp-details-cta-btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 26px;
+  background-color: transparent;
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 13.5px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: var(--radius-sm);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.camp-details-cta-btn-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-white);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 991.98px) {
+  .camp-details-cta-card {
+    padding: 40px 30px;
+  }
+  .camp-details-cta-title {
+    font-size: 26px;
+  }
+  .camp-details-cta-text {
+    margin-bottom: 25px;
+  }
+  .camp-details-cta-buttons {
+    flex-direction: row;
+  }
+  .camp-details-cta-btn-gold,
+  .camp-details-cta-btn-outline {
+    flex: 1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .camp-details-cta-section {
+    padding: 50px 0;
+  }
+  .camp-details-cta-card {
+    padding: 30px 20px;
+    border-left-width: 4px;
+  }
+  .camp-details-cta-title {
+    font-size: 22px;
+  }
+  .camp-details-cta-text {
+    font-size: 13.5px;
+  }
+  .camp-details-cta-buttons {
+    flex-direction: column;
+  }
+  .camp-details-cta-btn-gold,
+  .camp-details-cta-btn-outline {
+    width: 100%;
+    flex: none;
+  }
+}
