@@ -32,6 +32,12 @@
   <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" />
 
   @stack('css')
+  <style>
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+  </style>
 </head>
 <body>
 
