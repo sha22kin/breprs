@@ -56,7 +56,8 @@ class Post extends Model
         if($this->imageFile){
             return $this->imageFile->file_url;
         }elseif($this->type == 7){
-            return 'medies/member-avatar.svg';
+            // Member gender is stored in `template`
+            return $this->template == 'female' ? 'medies/member-avatar-female.png' : 'medies/member-avatar-male.png';
         }else{
             return 'medies/noimage.jpg';
         }

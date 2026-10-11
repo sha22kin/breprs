@@ -67,6 +67,13 @@
                                     <p style="color: red; margin: 0; font-size: 10px;">{{ $errors->first('short_description') }}</p>
                                     @endif
                                 </div>
+                                <div class="form-group">
+                                    <label for="template">Gender <small>(default avatar when no photo)</small></label>
+                                    <select class="form-control" name="template">
+                                        <option value="male" {{old('template', $member->template) != 'female' ? 'selected' : ''}}>Male</option>
+                                        <option value="female" {{old('template', $member->template) == 'female' ? 'selected' : ''}}>Female</option>
+                                    </select>
+                                </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">

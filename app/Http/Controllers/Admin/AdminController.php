@@ -1504,6 +1504,7 @@ class AdminController extends Controller
       $member->seo_description  = $r->seo_description;   // Facebook URL
       $member->tags             = $r->tags;              // Twitter URL
       $member->search_key       = $r->search_key;         // LinkedIn URL
+      $member->template         = $r->template == 'female' ? 'female' : 'male'; // Gender
       $member->drag             = $r->drag ?? 0;
       $member->status           = $r->status ? 'active' : 'inactive';
       $member->fetured          = $r->fetured ? true : false;
