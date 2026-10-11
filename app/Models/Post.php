@@ -55,11 +55,13 @@ class Post extends Model
     public function image(){
         if($this->imageFile){
             return $this->imageFile->file_url;
+        }elseif($this->type == 7){
+            return 'medies/member-avatar.svg';
         }else{
             return 'medies/noimage.jpg';
         }
     }
-    
+
     public function imageName(){
         
         if($this->imageFile){
